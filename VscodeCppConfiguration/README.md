@@ -303,8 +303,8 @@ Win + R 打开“运行”，输入“cmd”打开命令行，在命令行里输
 
 ## 参考链接
 
-__[【码农岛】MinGW-w64离线安装](https://www.manongdao.com/article-2442659.html) __
+__[【码农岛】MinGW-w64离线安装](https://www.manongdao.com/article-2442659.html)__
 
-__[【知乎】Visual Studio Code 如何编写运行 C、C++ 程序？](https://www.zhihu.com/question/30315894/answer/154979413) __
+__[【知乎】Visual Studio Code 如何编写运行 C、C++ 程序？](https://www.zhihu.com/question/30315894/answer/154979413)__
 
 __[【博客园】C++中头文件（.h）和源文件（.cpp）都应该写些什么](https://www.cnblogs.com/fenghuan/p/4794514.html)__
