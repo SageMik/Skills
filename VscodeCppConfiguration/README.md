@@ -16,10 +16,10 @@ Visual Studio Code（以下简称 VS code）是一款跨平台的轻量级**文�
 
 前往 [VS code 官网](https://code.visualstudio.com/) 选择 Download for Windows 进行下载，在电脑上安装 VS code 。
 
-![VS code 官网首页](pic\1-download-Chinese\1.1-VS-code-Official-Homepage.png)
+![VS code 官网首页](pic/1-download-Chinese/1.1-VS-code-Official-Homepage.png)
 
 安装时可能出现如下提示，按”确定“即可。
-<div style="text-align: center"><img src="pic\1-download-Chinese\1.2-Warning.png" alt="提示" style="zoom:50%;" /></div>
+<div style="text-align: center"><img src="pic/1-download-Chinese/1.2-Warning.png" alt="提示" style="zoom:50%;" /></div>
 
 出现这个提示的原因是，VS code 有两个版本：一个是 User 版，也就是打开我们下载的版本；另一个是 System 版，需要到官网的下载页面下载。两者的区别在于前者会将 VS code 的默认安装路径和配置会在当前帐户的路径，如果另外一个帐户在这台电脑上登录，将无法使用 VS code，后者则反之。
 
@@ -29,15 +29,15 @@ Visual Studio Code（以下简称 VS code）是一款跨平台的轻量级**文�
 
 点击左边红框中的图标，进入插件商店。
 
-![VS code 主界面](pic\1-download-Chinese\2.1-VS-code.png)
+![VS code 主界面](pic/1-download-Chinese/2.1-VS-code.png)
 
 搜索“Chinese”，点击第一项的“Install(安装)”。
 
-![插件商店](pic\1-download-Chinese\2.2-Chinese-Package.png)
+![插件商店](pic/1-download-Chinese/2.2-Chinese-Package.png)
 
 点击“Restart(重启)”，即可切换到中文界面。
 
-![重启](pic\1-download-Chinese\2.3-Restart.png)
+![重启](pic/1-download-Chinese/2.3-Restart.png)
 
 此外，第一次打开 VS code 时的默认主题是深色，可以在左上角菜单 “文件”->”首选项“->”颜色主题“ 中自行修改。
 
@@ -47,49 +47,49 @@ Visual Studio Code（以下简称 VS code）是一款跨平台的轻量级**文�
 
 前往 [MinGW-w64 的资源网页](https://sourceforge.net/projects/mingw-w64/files/)。
 
-![MinGW-w64](pic\2-install-complier\1.1-MinGW-w64-for-win.png)
+![MinGW-w64](pic/2-install-complier/1.1-MinGW-w64-for-win.png)
 
 滚动到下图位置，从 GCC 的最新版本中选择对应自己电脑的版本下载。**不要下载 Online Installer，避免安装速度过慢。**
 
-![下载对应版本](pic\2-install-complier\1.2-Download-MinGW-w64.png)
+![下载对应版本](pic/2-install-complier/1.2-Download-MinGW-w64.png)
 
 下载得到7z压缩文件，右键菜单点击“解压到当前文件夹”，得到“mingw64”文件夹。
 
-![解压得到文件夹](pic\2-install-complier\1.3-Decompress.png)
+![解压得到文件夹](pic/2-install-complier/1.3-Decompress.png)
 
 #### 2. 配置 MinGW-w64
 
 将上一步所得文件夹“mingw64”复制到一个不易被删除的地方（如 C:\ ），记下文件夹路径（如 C:\mingw64 ）。
 
-![移动](pic\2-install-complier\2.1-Move.png)
+![移动](pic/2-install-complier/2.1-Move.png)
 
 打开“系统属性”：
 
 方法一：Win + R 打开“运行”，输入“sysdm.cpl”回车即可。
 
-<img src="pic\2-install-complier\2.2-Command.png" alt="命令打开" style="zoom: 50%;" />
+<img src="pic/2-install-complier/2.2-Command.png" alt="命令打开" style="zoom: 50%;" />
 
 方法二：回到桌面，右键点击“此电脑”并选择“属性”菜单项，在弹出的窗口中找到“高级系统设置”即可。
 
-<img src="pic\2-install-complier\2.3-Computer.png" alt="“此电脑”打开" style="zoom: 50%;" />
+<img src="pic/2-install-complier/2.3-Computer.png" alt="“此电脑”打开" style="zoom: 50%;" />
 
 选择“系统属性”的“高级”选项卡，并点击“环境变量”按钮。
 
-<img src="pic\2-install-complier\2.4-Environment-Variables.png" alt="环境变量" style="zoom: 65%;" />
+<img src="pic/2-install-complier/2.4-Environment-Variables.png" alt="环境变量" style="zoom: 65%;" />
 
 在弹出的窗口中的“系统变量”中双击“Path”项。
 
-<img src="pic\2-install-complier\2.5-Path.png" alt="路径" style="zoom: 52%;" />
+<img src="pic/2-install-complier/2.5-Path.png" alt="路径" style="zoom: 52%;" />
 
 在“编辑环境变量”窗口中点击“新建”按钮，**输入你“mingw64”文件夹的路径并加上“\bin”**，如下图。
 
-<img src="pic\2-install-complier\2.6-Path-Edit.png" alt="路径编辑" style="zoom: 60%;" />
+<img src="pic/2-install-complier/2.6-Path-Edit.png" alt="路径编辑" style="zoom: 60%;" />
 
 #### 3. 编译器检测
 
 Win + R 打开“运行”，输入“cmd”打开命令行，在命令行里输入“gcc --version”，即查看 GCC 编译器的版本，出现如下画面则表示配置成功；反之，需要回到上一步重新配置。
 
-![解压得到文件夹](pic\2-install-complier\2.7-GCC.png)
+![解压得到文件夹](pic/2-install-complier/2.7-GCC.png)
 
 ### 三、调试 C / C++ 程序
 
@@ -241,21 +241,21 @@ Win + R 打开“运行”，输入“cmd”打开命令行，在命令行里输
 ```
 
 
-![工作区文件夹下的.vscode](pic\3-vscode-debugging\1.3-.vscode.png)
+![工作区文件夹下的.vscode](pic/3-vscode-debugging/1.3-.vscode.png)
 
 #### 2. 打开工作区
 
 方法一：在 VS code 左边的 "资源管理器"(快捷键 Ctrl + Shift + E) 点击 “打开文件夹” 按钮，打开工作区文件夹即可。
 
-![资源管理器](pic\3-vscode-debugging\1.4-Explorer.png)
+![资源管理器](pic/3-vscode-debugging/1.4-Explorer.png)
 
 方法二：在工作区文件夹空白处右键打开菜单选中“通过 Code 打开”即可。
 
-![通过 Code 打开](pic\3-vscode-debugging\1.5-Open-with-Code.png)
+![通过 Code 打开](pic/3-vscode-debugging/1.5-Open-with-Code.png)
 
 打开后 VS code 将显示如下画面：
 
-![打开后](pic\3-vscode-debugging\1.6-After-Opening.png)
+![打开后](pic/3-vscode-debugging/1.6-After-Opening.png)
 
 需要注意的是，**以后进行调试都要按照上述步骤打开工作区，单独打开代码文件需要重新配置才能进行调试。**
 
@@ -267,7 +267,7 @@ Win + R 打开“运行”，输入“cmd”打开命令行，在命令行里输
 
 在 tasks.json 的配置中，我们**使其编译了当前目录下的所有 C / C++ 代码，这使多代码文件的 C / C++ 程序也可以进行调试。**然而，这样就会引出我们需要注意的一点——**工作区文件夹下的所有代码中，只能有一个 main() 函数**，否则就会出现如下错误：
 
-![main() 函数的多重定义](pic\3-vscode-debugging\1.7-Multiple-Definition.png)
+![main() 函数的多重定义](pic/3-vscode-debugging/1.7-Multiple-Definition.png)
 
 ### 四、运行 C / C++ 程序
 
@@ -275,11 +275,11 @@ Win + R 打开“运行”，输入“cmd”打开命令行，在命令行里输
 
 打开 VS code ，类似第一步的操作，在插件商店搜索“Code Runner”并安装。
 
-![Code Runner](pic\4-vscode-runnning\1.1-Code-Runner.png)
+![Code Runner](pic/4-vscode-runnning/1.1-Code-Runner.png)
 
 打开左上角菜单 “文件”->"首选项"->“设置”(快捷键 Ctrl + , )，点击下图右上角红框中的图标，打开 setting.json。
 
-![setting.json](pic\4-vscode-runnning\1.2-Setting-JSON.png)
+![setting.json](pic/4-vscode-runnning/1.2-Setting-JSON.png)
 
 在 setting.json 的 “{”、“}” 符号（即左右花弧号）之间中输入以下内容，保存即可：
 
@@ -297,14 +297,14 @@ Win + R 打开“运行”，输入“cmd”打开命令行，在命令行里输
 
 配置完成后，点击右上角的空心三角形按钮，或按 Ctrl + Alt + N，即可在 VS code 的终端中运行 C / C++ 程序。
 
-![成功运行](pic\4-vscode-runnning\1.3-Executing.png)
+![成功运行](pic/4-vscode-runnning/1.3-Executing.png)
 
 与调试不同的是，通过 Code Runner，即使单独打开一个代码文件而不打开工作区，也能直接运行 C / C++ 程序（如上图），但依然要注意**代码的目录下的所有代码只能有一个 main() 函数。**
 
 ## 参考链接
 
-**[【码农岛】MinGW-w64离线安装](https://www.manongdao.com/article-2442659.html) **
+__[【码农岛】MinGW-w64离线安装](https://www.manongdao.com/article-2442659.html) __
 
-**[【知乎】Visual Studio Code 如何编写运行 C、C++ 程序？](https://www.zhihu.com/question/30315894/answer/154979413) **
+__[【知乎】Visual Studio Code 如何编写运行 C、C++ 程序？](https://www.zhihu.com/question/30315894/answer/154979413) __
 
-**[【博客园】C++中头文件（.h）和源文件（.cpp）都应该写些什么](https://www.cnblogs.com/fenghuan/p/4794514.html)**
+__[【博客园】C++中头文件（.h）和源文件（.cpp）都应该写些什么](https://www.cnblogs.com/fenghuan/p/4794514.html)__
